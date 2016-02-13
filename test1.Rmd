@@ -19,6 +19,8 @@ You can also embed plots, for example:
 
 ```{r, echo=FALSE}
 plot(cars)
+lm1 <- lm(dist ~ speed, data = cars)
+abline(lm1)
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
